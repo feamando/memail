@@ -1,0 +1,19 @@
+{
+  "project": {
+    "name": "memail",
+    "language": "python",
+    "entryPoint": "GEMINI.md"
+  },
+  "codeAssist": {
+    "enabled": true,
+    "model": "gemini-2.0-flash",
+    "contextFiles": [
+      "GEMINI.md",
+      "AI_Guidance/Rules/CODING_STANDARDS.md",
+      "AI_Guidance/Rules/AGENT_DEV_GUIDE.md"
+    ]
+  },
+  "prompts": {
+    "directory": ".gemini/prompts"
+  }
+}

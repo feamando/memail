@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(pytest:*)",
+      "Bash(git:*)",
+      "Bash(pip:*)",
+      "Bash(ruff:*)",
+      "Bash(black:*)",
+      "Bash(mypy:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Grep"
+    ],
+    "deny": [
+      "Bash(rm -rf /*)",
+      "Bash(sudo:*)"
+    ]
+  },
+  "model": "claude-sonnet-4-20250514"
+}

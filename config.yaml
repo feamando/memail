@@ -1,0 +1,44 @@
+# Memail Project Configuration
+# This file contains project-specific settings for the AI agent
+
+project:
+  name: "memail"
+  description: "Email management application"
+  version: "0.1.0"
+  language: "python"  # or typescript, go, rust, etc.
+
+# Gemini API configuration
+gemini:
+  model: "gemini-2.0-flash"
+  api_key_env: "GEMINI_API_KEY"  # Environment variable name
+
+# Paths (relative to project root)
+paths:
+  source: "src"
+  tests: "tests"
+  docs: "docs"
+  brain: "AI_Guidance/Brain"
+  tools: "AI_Guidance/Tools"
+
+# Ralph (long-running tasks) configuration
+ralph:
+  state_file: ".ralph_state.json"
+  default_timeout: 300  # seconds
+
+# Testing configuration
+testing:
+  framework: "pytest"  # or jest, go test, cargo test
+  command: "pytest"
+  coverage_threshold: 80
+
+# Code quality
+quality:
+  linter: "ruff"  # or eslint, golint, clippy
+  formatter: "black"  # or prettier, gofmt, rustfmt
+  type_checker: "mypy"  # or typescript, none
+
+# Git configuration
+git:
+  main_branch: "main"
+  commit_style: "conventional"  # conventional commits
+  require_tests: true
